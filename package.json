@@ -1,6 +1,6 @@
 {
   "name": "vitest-localstorage-mock",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Auto mock all localstorage and sessionstorage APIs for your Vitest tests",
   "author": "Mitscherlich <mitscherlich36@gmail.com>",
   "license": "MIT",
