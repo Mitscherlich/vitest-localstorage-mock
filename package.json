@@ -1,0 +1,52 @@
+{
+  "name": "vitest-localstorage-mock",
+  "version": "0.0.0",
+  "description": "Auto mock all localstorage and sessionstorage APIs for your Vitest tests",
+  "author": "Mitscherlich <mitscherlich36@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitscherlich/vitest-localstorage-mock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mitscherlich/vitest-localstorage-mock/issues"
+  },
+  "homepage": "https://github.com/Mitscherlich/vitest-localstorage-mock#README",
+  "keywords": [
+    "vitest",
+    "test",
+    "mock",
+    "localstorage",
+    "sessionstorage",
+    "storage",
+    "node",
+    "browser"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/setup.js",
+  "scripts": {
+    "test:node": "vitest run --environment node",
+    "test:jsdom": "vitest run --environment jsdom",
+    "test": "pnpm run test:node && pnpm run test:jsdom",
+    "release": "bumpp package.json --commit --push --tag && pnpm publish --access public"
+  },
+  "peerDependencies": {
+    "vitest": "*"
+  },
+  "devDependencies": {
+    "@m9ch/eslint-config-all": "^0.2.4",
+    "@vitest/ui": "^0.24.0",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.24.0",
+    "jsdom": "^20.0.1",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.6",
+    "vitest": "^0.23.4"
+  }
+}
