@@ -38,7 +38,7 @@
     "test:node": "vitest run --environment node",
     "test:jsdom": "vitest run --environment jsdom",
     "test": "pnpm run test:node && pnpm run test:jsdom",
-    "release": "bumpp package.json --commit --push --tag && pnpm publish --access public"
+    "release": "bumpp package.json && pnpm publish --access public"
   },
   "peerDependencies": {
     "vitest": "*"
