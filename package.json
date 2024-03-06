@@ -1,17 +1,8 @@
 {
   "name": "vitest-localstorage-mock",
+  "type": "module",
   "version": "0.0.1",
   "description": "Auto mock all localstorage and sessionstorage APIs for your Vitest tests",
-  "author": "Mitscherlich <mitscherlich36@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mitscherlich/vitest-localstorage-mock.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Mitscherlich/vitest-localstorage-mock/issues"
-  },
-  "homepage": "https://github.com/Mitscherlich/vitest-localstorage-mock#README",
   "keywords": [
     "vitest",
     "test",
@@ -22,13 +13,27 @@
     "node",
     "browser"
   ],
+  "license": "MIT",
+  "author": "Mitscherlich <mitscherlich36@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitscherlich/vitest-localstorage-mock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mitscherlich/vitest-localstorage-mock/issues"
+  },
+  "homepage": "https://github.com/Mitscherlich/vitest-localstorage-mock#README",
   "publishConfig": {
     "access": "public"
+  },
+  "main": "./lib/setup.js",
+  "module": "./lib/setup.js",
+  "exports": {
+    ".": "./lib/setup.js"
   },
   "files": [
     "lib"
   ],
-  "main": "./lib/setup.js",
   "scripts": {
     "test:node": "vitest run --environment node",
     "test:jsdom": "vitest run --environment jsdom",
