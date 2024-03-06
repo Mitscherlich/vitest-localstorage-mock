@@ -20,14 +20,13 @@ npm install -D vitest-localstorage-mock
 
 ### Module
 
-In your `vite.config.(js|ts)` under the `test` [configuration section](https://vitest.dev/config/#options) create a `setupFiles` array and add `vitest-localstorage-mock` to the array. Also, ensure you have enabled [`globals`](https://vitest.dev/config/#globals).
+In your `vite.config.(js|ts)` under the `test` [configuration section](https://vitest.dev/config/#options) create a `setupFiles` array and add `vitest-localstorage-mock` to the array. ~~Also, ensure you have enabled [`globals`](https://vitest.dev/config/#globals)~~ We don't need globals any more.
 
 ```js
 import { defineConfig } from 'vite'
 
 export default defineConfig({
   test: {
-    globals: true, // required
     setupFiles: ['vitest-localstorage-mock'],
     mockReset: false,
   }
@@ -54,7 +53,6 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   test: {
-    globals: true, // required
     setupFiles: ['./__setups__/localstorage.js'],
     mockReset: false,
   }
