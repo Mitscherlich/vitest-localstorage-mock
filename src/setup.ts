@@ -1,5 +1,5 @@
 import { vitest } from 'vitest'
-import { LocalStorage } from './localstorage'
+import { LocalStorage } from './storage'
 
 if (typeof globalThis._localStorage !== 'undefined') {
   Object.defineProperty(globalThis, '_localStorage', {
@@ -9,7 +9,7 @@ if (typeof globalThis._localStorage !== 'undefined') {
   globalThis.localStorage = globalThis._localStorage
 }
 else {
-  globalThis.localStorage = new LocalStorage(vitest)
+  globalThis.localStorage = new LocalStorage(vitest) as any
 }
 
 if (typeof globalThis._sessionStorage !== 'undefined') {
@@ -20,5 +20,5 @@ if (typeof globalThis._sessionStorage !== 'undefined') {
   globalThis.sessionStorage = globalThis._sessionStorage
 }
 else {
-  globalThis.sessionStorage = new LocalStorage(vitest)
+  globalThis.sessionStorage = new LocalStorage(vitest) as any
 }

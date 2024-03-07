@@ -27,17 +27,20 @@
     "access": "public"
   },
   "exports": {
-    ".": "./lib/setup.js"
+    ".": "./dist/index.,js"
   },
-  "main": "./lib/setup.js",
-  "module": "./lib/setup.js",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
+    "build": "unbuild",
     "test:node": "vitest run --environment node",
     "test:jsdom": "vitest run --environment jsdom",
     "test": "pnpm run test:node && pnpm run test:jsdom",
+    "up": "taze major -I",
+    "prepublishOnly": "pnpm run build",
     "release": "bumpp package.json && pnpm publish --access public"
   },
   "peerDependencies": {
@@ -49,8 +52,10 @@
     "bumpp": "^9.4.0",
     "eslint": "^8.57.0",
     "jsdom": "^24.0.0",
+    "taze": "^0.13.3",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3",
+    "unbuild": "^2.0.0",
     "vite": "^5.1.5",
     "vitest": "^1.3.1"
   }

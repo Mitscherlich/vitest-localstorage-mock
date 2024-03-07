@@ -42,12 +42,16 @@ describe('storage', () => {
       storage.setItem(KEY, VALUE2)
       expect(storage.setItem).toHaveBeenLastCalledWith(KEY, VALUE2)
       expect(storage.__STORE__[KEY]).toBe(VALUE2)
+      // @ts-expect-error by desgin
       storage.setItem(KEY, VALUE3)
       expect(storage.__STORE__[KEY]).toBe(VALUE3.toString())
+      // @ts-expect-error by desgin
       storage.setItem(KEY, null)
       expect(storage.__STORE__[KEY]).toBe('null')
+      // @ts-expect-error by desgin
       storage.setItem(KEY, undefined)
       expect(storage.__STORE__[KEY]).toBe('undefined')
+      // @ts-expect-error by desgin
       storage.setItem(KEY, {})
       expect(storage.__STORE__[KEY]).toBe('[object Object]')
     })

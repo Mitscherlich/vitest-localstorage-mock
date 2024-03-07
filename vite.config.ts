@@ -1,5 +1,7 @@
-export default {
+import { defineConfig } from 'vite'
+
+export default defineConfig({
   test: {
-    setupFiles: ['./lib/setup.js'],
+    setupFiles: ['./src/index.ts'],
   },
-}
+})
