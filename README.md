@@ -2,7 +2,7 @@
 
 Auto mock `localstorage` and `sessionstorage` in your [Vitest](https://vitest.dev/) scripts for testing.
 
-[![npm version](https://badgen.net/npm/v/vitest-localstorage-mock)](https://npm.im/vitest-localstorage-mock) [![npm downloads](https://badgen.net/npm/dm/vitest-localstorage-mock)](https://npm.im/vitest-localstorage-mock)
+[![npm version](https://badgen.net/npm/v/vitest-localstorage-mock)](https://npm.im/vitest-localstorage-mock) [![npm downloads](https://badgen.net/npm/dm/vitest-localstorage-mock)](https://npm.im/vitest-localstorage-mock) ![actions status](https://github.com/Mitscherlich/vitest-localstorage-mock/actions/workflows/ci.yml/badge.svg?branch=dev)
 
 ## Install
 
