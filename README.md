@@ -42,8 +42,6 @@ add the `require` statement to an existing setup file.
 
 ```js
 import 'vitest-localstorage-mock'
-// or
-require('vitest-localstorage-mock')
 ```
 
 Add that file to your `setupFiles` array:
