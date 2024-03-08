@@ -28,7 +28,7 @@
     "access": "public"
   },
   "exports": {
-    ".": "./dist/index.,js"
+    ".": "./dist/index.mjs"
   },
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
