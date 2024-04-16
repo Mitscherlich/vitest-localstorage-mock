@@ -2,7 +2,7 @@
   "name": "vitest-localstorage-mock",
   "type": "module",
   "version": "0.1.2",
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@9.0.1",
   "description": "Auto mock all localstorage and sessionstorage APIs for your Vitest tests",
   "author": "Mitscherlich <mitscherlich36@gmail.com>",
   "license": "MIT",
