@@ -25,7 +25,7 @@ importers:
         version: 24.0.0
       taze:
         specifier: ^0.13.3
-        version: 0.13.5
+        version: 0.13.6
       tsup:
         specifier: ^8.0.2
         version: 8.0.2(postcss@8.4.38)(typescript@5.4.5)
@@ -2867,8 +2867,8 @@ packages:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
-  taze@0.13.5:
-    resolution: {integrity: sha512-rqMiPMc20n2vJnWpFTCa9fkbRHl6NCUwk4g8Co+7TynpOgKP48bVkEBSQkUf7konzzF2Li5l94jruzZ8gHKnhA==}
+  taze@0.13.6:
+    resolution: {integrity: sha512-u07uNpetujo56QQs5cNRafPDuSZYInbm+JvPaxQcZTzolMMombCQiaSvvbm6vNXpTCqU+gGRXcLYYSmSMIwt8Q==}
     hasBin: true
 
   text-table@0.2.0:
@@ -6218,7 +6218,7 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
-  taze@0.13.5:
+  taze@0.13.6:
     dependencies:
       '@antfu/ni': 0.21.12
       cli-progress: 3.12.0
@@ -6227,7 +6227,6 @@ snapshots:
       execa: 8.0.1
       picocolors: 1.0.0
       prompts: 2.4.2
-      semver: 7.6.0
       ufo: 1.5.3
       unconfig: 0.3.13
       yargs: 17.7.2
