@@ -25,7 +25,7 @@ importers:
         version: 24.1.0
       taze:
         specifier: ^0.15.0
-        version: 0.15.1
+        version: 0.15.2
       tsup:
         specifier: ^8.0.2
         version: 8.1.0(postcss@8.4.39)(typescript@5.5.3)
@@ -3352,8 +3352,8 @@ packages:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
-  taze@0.15.1:
-    resolution: {integrity: sha512-kAHn5/gKEhgintp0pPY84RV4bgp7u/Ad1ewVvq+XTJk7jR862p4aYEWbKU/28KGKMbiM8DIX3Qn3DAcvdqO5hQ==}
+  taze@0.15.2:
+    resolution: {integrity: sha512-Zeq/67Wv1FTrismdEANsk7vu6vDm/2GHfZvxYdLDULqTy2tQNOCTbfd4c+kGW+R5XTLUR/0xSJTPl3xQgsr6HA==}
     hasBin: true
 
   text-table@0.2.0:
@@ -7171,7 +7171,7 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
-  taze@0.15.1:
+  taze@0.15.2:
     dependencies:
       '@antfu/ni': 0.22.0
       '@jsdevtools/ez-spawn': 3.0.4
