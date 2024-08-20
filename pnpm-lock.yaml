@@ -25,7 +25,7 @@ importers:
         version: 24.1.1
       taze:
         specifier: ^0.16.0
-        version: 0.16.5
+        version: 0.16.6
       tsup:
         specifier: ^8.0.2
         version: 8.2.4(jiti@1.21.6)(postcss@8.4.41)(tsx@4.17.0)(typescript@5.5.4)(yaml@2.4.3)
@@ -48,8 +48,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@antfu/ni@0.22.1':
-    resolution: {integrity: sha512-5STu7QHsLYWpt+K/+zRcMOIUnG51lOhnqPInImXGyC6PMHtkrZQjbqZ/R3GW8XdTYOnKiT77+R09Tl4fzuFK5w==}
+  '@antfu/ni@0.22.4':
+    resolution: {integrity: sha512-uCzh43cmUwQQcgv2BPyo0JWOMgXhcaE+F2I6Ucmfc7f9ir52lfA4OtZXdfL5D8cMa5GAwuCSNqOshIol8YN82g==}
     hasBin: true
 
   '@antfu/utils@0.7.10':
@@ -3345,8 +3345,8 @@ packages:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
-  taze@0.16.5:
-    resolution: {integrity: sha512-b2IoHME99X1ckjDeyKN4PKd/9oloH53Eo2LAkKbFrnrHXybVOj64biXuEeR24CIe15SG1lQdZO/VBDC6bY58GQ==}
+  taze@0.16.6:
+    resolution: {integrity: sha512-KBqEUSsRH1i3DykVutcoV3TtXVQSuZRhKnqGsI2Sz0hjYySNCFPlViQJ+rGNn5OE+jiYKoKTzq4rIR/1tzQ1Hg==}
     hasBin: true
 
   text-table@0.2.0:
@@ -3729,7 +3729,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@antfu/ni@0.22.1': {}
+  '@antfu/ni@0.22.4': {}
 
   '@antfu/utils@0.7.10': {}
 
@@ -7139,9 +7139,9 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
-  taze@0.16.5:
+  taze@0.16.6:
     dependencies:
-      '@antfu/ni': 0.22.1
+      '@antfu/ni': 0.22.4
       '@jsdevtools/ez-spawn': 3.0.4
       js-yaml: 4.1.0
       npm-registry-fetch: 17.1.0
