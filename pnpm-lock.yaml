@@ -24,8 +24,8 @@ importers:
         specifier: ^25.0.0
         version: 25.0.1
       taze:
-        specifier: ^0.17.0
-        version: 0.17.2
+        specifier: ^0.18.0
+        version: 0.18.0
       tsup:
         specifier: ^8.0.2
         version: 8.3.5(jiti@2.3.3)(postcss@8.4.47)(tsx@4.19.1)(typescript@5.6.3)(yaml@2.4.3)
@@ -2519,8 +2519,8 @@ packages:
     resolution: {integrity: sha512-aU6xnDFYT3x17e/f0IiiwlGPTy2jzMySGfUB4fq6z7CV8l85CWHDk5ErhyhpfDHhrOMwGFhSQkhMGHaIotA6Ng==}
     engines: {node: '>= 0.4'}
 
-  ofetch@1.4.0:
-    resolution: {integrity: sha512-MuHgsEhU6zGeX+EMh+8mSMrYTnsqJQQrpM00Q6QHMKNqQ0bKy0B43tk8tL1wg+CnsSTy1kg4Ir2T5Ig6rD+dfQ==}
+  ofetch@1.4.1:
+    resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
 
   ohash@1.1.4:
     resolution: {integrity: sha512-FlDryZAahJmEF3VR3w1KogSEdWX3WhA5GPakFx4J81kEAiHyLMpdLLElS8n8dfNadMgAne/MywcvmogzscVt4g==}
@@ -2559,8 +2559,8 @@ packages:
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
 
-  package-manager-detector@0.2.1:
-    resolution: {integrity: sha512-/hVW2fZvAdEas+wyKh0SnlZ2mx0NIa1+j11YaQkogEJkcMErbwchHCuo8z7lEtajZJQZ6rgZNVTWMVVd71Bjng==}
+  package-manager-detector@0.2.2:
+    resolution: {integrity: sha512-VgXbyrSNsml4eHWIvxxG/nTL4wgybMTXCV2Un/+yEc3aDKKU6nQBZjbeP3Pl3qm9Qg92X/1ng4ffvCeD/zwHgg==}
 
   parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
@@ -3125,8 +3125,8 @@ packages:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
-  taze@0.17.2:
-    resolution: {integrity: sha512-VZvB2PfuIXVQdgEnjqg1NLAnxzEv28ypxTLpbtSs8rO0gdZbFRwRj3ES9QXneo112rdIwx1SM2QcIL83EfNBdg==}
+  taze@0.18.0:
+    resolution: {integrity: sha512-aL8g+4tZvfhsn147u9dRP2eUE2MV+HfJe1sAtSJp46b0Gd8AjyqlJ2uDwnJfM1XNv301Mvh98RkXQw27sco5tQ==}
     hasBin: true
 
   text-table@0.2.0:
@@ -6067,7 +6067,7 @@ snapshots:
       define-properties: 1.2.1
       es-abstract: 1.22.5
 
-  ofetch@1.4.0:
+  ofetch@1.4.1:
     dependencies:
       destr: 2.0.3
       node-fetch-native: 1.6.4
@@ -6112,7 +6112,7 @@ snapshots:
 
   package-json-from-dist@1.0.1: {}
 
-  package-manager-detector@0.2.1: {}
+  package-manager-detector@0.2.2: {}
 
   parent-module@1.0.1:
     dependencies:
@@ -6671,13 +6671,13 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
-  taze@0.17.2:
+  taze@0.18.0:
     dependencies:
       '@antfu/ni': 0.23.0
       js-yaml: 4.1.0
-      ofetch: 1.4.0
-      package-manager-detector: 0.2.1
-      tinyexec: 0.3.0
+      ofetch: 1.4.1
+      package-manager-detector: 0.2.2
+      tinyexec: 0.3.1
       unconfig: 0.6.0
       yargs: 17.7.2
     transitivePeerDependencies:
