@@ -50,7 +50,7 @@
   "devDependencies": {
     "@m9ch/eslint-config-all": "^0.3.2",
     "@vitest/ui": "^3.0.0",
-    "bumpp": "^9.4.0",
+    "bumpp": "^10.0.0",
     "eslint": "^9.0.0",
     "jsdom": "^27.0.0",
     "taze": "^19.0.0",
