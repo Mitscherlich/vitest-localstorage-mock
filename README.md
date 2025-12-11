@@ -28,7 +28,6 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   test: {
     setupFiles: ['vitest-localstorage-mock'],
-    mockReset: false,
   }
 })
 ```
@@ -52,7 +51,6 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   test: {
     setupFiles: ['./__setups__/localstorage.js'],
-    mockReset: false,
   }
 })
 ```
