@@ -1,24 +1,18 @@
 import { vitest } from 'vitest'
 import { LocalStorage } from './storage'
 
-if (typeof globalThis._localStorage !== 'undefined') {
-  Object.defineProperty(globalThis, '_localStorage', {
-    value: new LocalStorage(vitest),
-    writable: false,
+;['localStorage', 'sessionStorage'].forEach((key) => {
+  const storage = new LocalStorage(vitest)
+  if (typeof globalThis[`_${key}`] !== 'undefined') {
+    Object.defineProperty(globalThis, `_${key}`, {
+      value: storage,
+      writable: false,
+    })
+  }
+  Object.defineProperty(globalThis, key, {
+    value: storage,
+    writable: true,
+    configurable: true,
+    enumerable: true,
   })
-  globalThis.localStorage = globalThis._localStorage
-}
-else {
-  globalThis.localStorage = new LocalStorage(vitest) as any
-}
-
-if (typeof globalThis._sessionStorage !== 'undefined') {
-  Object.defineProperty(globalThis, '_sessionStorage', {
-    value: new LocalStorage(vitest),
-    writable: false,
-  })
-  globalThis.sessionStorage = globalThis._sessionStorage
-}
-else {
-  globalThis.sessionStorage = new LocalStorage(vitest) as any
-}
+})
