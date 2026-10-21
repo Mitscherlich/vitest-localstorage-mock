@@ -55,6 +55,24 @@ export default defineConfig({
 })
 ```
 
+## Releasing
+
+Run `pnpm release` to bump `package.json`, commit the version change, and push a
+matching `vX.Y.Z` tag. The `publish.yml` GitHub Actions workflow validates the tag,
+runs both test environments, builds the package, and publishes it to npm.
+Only stable versions are published to the `latest` dist-tag.
+
+The npm package must have a GitHub Actions trusted publisher configured with:
+
+- Organization or user: `Mitscherlich`
+- Repository: `vitest-localstorage-mock`
+- Workflow filename: `publish.yml`
+- Environment: leave empty
+- Allow direct publishing with `npm publish`
+
+No npm token is required. If publishing fails, fix the configuration and re-run
+the failed workflow; do not move an existing release tag.
+
 ## License
 
 MIT &copy; [Mitscherlich](https://mitscherlich.me)
